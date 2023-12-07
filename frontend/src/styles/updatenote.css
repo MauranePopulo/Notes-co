@@ -1,0 +1,35 @@
+.update_note_panel {
+    background-color: var(--form-backgroundcolor);
+    min-height: 10rem;
+    padding: 1rem 2rem;
+}
+
+.update_note_panel > div> form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    text-align: center;
+    align-items: center;
+    margin: 0px 60px 0px 60px;
+
+}
+
+.update_note_panel > div> form > input {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    background-color: white;
+    border: 0.5px solid black;
+    width: 75%;
+}
+
+.update_note_panel > h2  {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.update_note_panel > select {
+    border: solid 2px salmon;
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 20%;
+}

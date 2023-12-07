@@ -3,4 +3,20 @@ CREATE TABLE item (
   title varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE user (
+ `id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+ `email` VARCHAR(255) UNIQUE NOT NULL,
+ `hashedPassword` VARCHAR(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE note (
+ `id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+ `title` VARCHAR(255) NOT NULL,
+ `description` TEXT NOT NULL,
+ `user_id` INT NOT NULL,
+ FOREIGN KEY (user_id) REFERENCES user(id)
+ ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
 INSERT INTO item (title) VALUES ('Stuff'), ('Doodads');

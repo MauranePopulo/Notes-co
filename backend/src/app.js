@@ -11,6 +11,10 @@ const app = express();
 
 // use some application-level middlewares
 
+const cookieParser = require("cookie-parser");
+
+app.use(cookieParser());
+
 app.use(express.json());
 
 const cors = require("cors");
@@ -19,6 +23,7 @@ app.use(
   cors({
     origin: process.env.FRONTEND_URL ?? "http://localhost:3000",
     optionsSuccessStatus: 200,
+    credentials: true,
   })
 );
 

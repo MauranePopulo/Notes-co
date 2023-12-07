@@ -1,0 +1,96 @@
+.Nc-logo {
+    margin-bottom: 20px;
+    padding: 10px;
+    width : 250px;
+    height : 70px;
+    border-radius: 20px}
+
+.connectionUser{
+    background-color:var(--form-backgroundcolor);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+.formConnectionUser {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    background-color: var(--backgroundcolor);
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.formConnectionUser:hover {
+    transform: scale(1.05);
+    border: 1px solid var(--form-backgroundcolor);
+  }
+
+.formConnectionUser > h2 {
+    text-align: center;
+    margin: 1em;
+    /* color: var(--form-backgroundcolor); */
+    font-size: 1.2em;
+}
+
+.formConnectionUser > form {
+    /* border: solid 2px salmon; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.formConnectionUser > form > label {
+    font-size: 0.9rem;
+    font-weight: 600 ;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+.formConnectionUser > form > input {
+    width: 16rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+        border-radius: 25px;
+        padding: 0.9em;
+        margin-bottom: 5px;
+        border: none;
+        outline: none;
+        color: black;
+        /* background-color:var(--form-backgroundcolor); */
+        /* box-shadow: inset 2px 5px 10px rgb(239, 221, 221); */
+}
+
+.btnLogin {
+ width: 16rem;
+  border-radius: 30px;
+  border: none;
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em; 
+  margin: 20px 15px 15px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color:var(--form-backgroundcolor);
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: bolder;
+ 
+}
+
+.btnLogin:hover {
+    background-color: var(--text-color);
+    /* border : solid 2px var(--form-backgroundcolor); */
+    color: var(--form-backgroundcolor);
+  }

@@ -1,0 +1,160 @@
+.notesOnly{
+  margin: 0 auto;
+}
+
+.notedashboard {
+    display: flex;
+    width: 100%;
+}
+
+.nav_note_dashboard {
+    display: flex;
+    background-color: var( --form-backgroundcolor);
+    width: 30%;
+    list-style: none;
+    border-radius: 15px;
+    justify-content: center;
+    margin: 30px;
+  }
+
+  .ul_note_dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 100px;
+    padding: 40px 0;
+    line-height: 40px;
+    list-style-type: none;
+    height: 95vh;
+    width: 100%;
+  }
+
+    
+  .ul_note_dashboard a {
+    color: var(--color-text);
+    padding: 5px;
+    line-height: 10px;
+    text-decoration: none;
+  }
+  
+  .middle {
+    list-style: none;
+  }
+  
+  .ul_note_dashboard a:hover {
+    font-weight: bolder;
+    color: var(--color-text);
+  }
+  
+  .middle:hover {
+    position: relative;
+  }
+  
+  .middle:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 50%;
+    width: 50%;
+    border-bottom: 2px solid var(--backgroundcolor);
+  }
+  
+  .btnNoteDash {
+    border: none;
+    background-color: var(--form-backgroundcolor);
+    font-size: 1.5rem;
+  }
+
+  .centered-dashnotecomponents {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin:30px;
+    background-color: var(--backgroundcolor);
+    border-radius: 15px;
+    width: 150vh;
+
+  }
+
+  .centered-dashnotecomponents > h3 {
+    padding: 10%
+  }
+
+  .dashSelf {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  /* PUBLISH NOTE */
+  .content_publish_note  {
+    /* border: solid 2px red; */
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .input_wrapper {
+    flex: 0 0 48%;
+    padding-bottom: 16px;  
+  
+  }
+
+  .input_wrapper > label {
+    font-size: 1.2rem;
+    font-weight: 600 ;
+    margin-bottom: 5px;
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+  .input_wrapper > textarea {
+    border-radius: 6px;
+    width: 20rem;
+    text-align: center;
+    border: none;
+  }
+
+
+  .publish_form_label{
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+
+  }
+
+  .publish_form_label > label {
+    font-size: 1.2rem;
+    font-weight: 600 ;
+    margin-bottom: 10px;
+
+    
+  }
+
+  .publish_form_label .big_label {
+    height: 7rem;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 16px;
+  }
+
+  .publish_form_label > button {
+    background-color:var(--form-backgroundcolor);
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    padding: 6px;
+    margin: 0 auto;
+    width: 35%;
+    text-align: center;
+
+  }

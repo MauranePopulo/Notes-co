@@ -1,0 +1,80 @@
+.content_saved_note{
+    /* border: solid 2px purple; */
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.notes_details {
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    height: 180px;
+    border-radius: 15px;
+    background: #D5B0AC;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.notes_details::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    border-radius: 50%;
+    border: 35px solid rgba(255, 255, 255, 0.102);
+    transition: all .8s ease;
+    filter: blur(.5rem);
+  }
+
+  .notes_details:hover::before {
+    width: 140px;
+    height: 140px;
+    top: -30%;
+    left: 50%;
+    filter: blur(0rem);
+  }
+
+  .notes_description {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 0.9rem;
+  }
+
+  .btnNotes {
+    border: none;
+    border-radius: 20px;
+  height: 35px;
+  background-color: rgba(247, 234, 234, 0.589);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  }
+.icons{
+  display: flex;
+  justify-content: space-evenly;;
+}
+  .svg-icon {
+    width: 25px;
+    height: 25px;
+    stroke: rgb(38, 59, 126);
+  }
+
+  .btnNotes:hover {
+    background-color: rgb(247, 234, 234);
+  }
+
+  .actionBtn{
+    border: none; 
+    background-color: transparent;
+  }

@@ -1,5 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import "./styles/home.css";
+import "./styles/app.css";
+import "./styles/registeruser.css";
+import "./styles/loginuser.css";
+
+import "./styles/notedashboard.css";
+import "./styles/notescontent.css";
+import "./styles/updatenote.css";
 
 import App from "./App";
 
@@ -7,6 +16,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
